@@ -4,7 +4,7 @@ clear all, close all,
 addpath('../src/');
 
 % Load example data
-SquaredDistanceMatrix = load('../data/D2.mat');
+SquaredDistanceMatrix = load('D2.mat');
 
 % Example matrix consists of squared distances
 % Algorithm requires distances
@@ -21,6 +21,7 @@ Data2plot.labels = ones(size(X,1),1);
 Data2plot.X      = X;
 options.xname    = '\gamma_1';
 options.yname    = '\gamma_2';
-options.title    = 'all generations';
-options.filename = '2Dplot';
+options.title    = '2D plot';
+options.filename = 'output/2Dplot';
+mkdir('output')
 plot2D(Data2plot, options)
