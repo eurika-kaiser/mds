@@ -14,7 +14,7 @@ DistanceMatrix = sqrt(SquaredDistanceMatrix.CDM);
 X = cmds(DistanceMatrix,2);
 
 % Plot results
-figure,plot(X(:,1),X(:,2),'.')
+figure,plot(X(:,1),X(:,2),'ok')
 
 % Do a nicer plot and save it
 Data2plot.labels = ones(size(X,1),1);
